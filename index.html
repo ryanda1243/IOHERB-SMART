@@ -8,6 +8,54 @@
         <meta name="author" content="">
 
         <title>IOHERB-SMART</title>
+        
+<style>
+    #loader-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        transition: opacity 1s ease; /* Transisi menghilang yang sangat halus */
+    }
+
+    .loader-logo {
+        width: 150px; /* Ukuran dibuat sedikit lebih besar untuk fokus utama */
+        height: auto;
+        /* Animasi bernafas: durasi 2.5 detik, mengulang selamanya */
+        animation: breathe 2.5s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+        0%, 100% { 
+            transform: scale(0.95); 
+            opacity: 0.7;
+            filter: grayscale(20%);
+        }
+        50% { 
+            transform: scale(1.1); 
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+    }
+
+    .loader-text {
+        margin-top: 20px;
+        color: #2d5a27;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 12px;
+        opacity: 0.8;
+    }
+</style>
 
         <!-- CSS FILES -->                
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +69,7 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
-        
+
 <!--
 
 TemplateMo 587 Tiya Golf Club
@@ -29,24 +77,19 @@ TemplateMo 587 Tiya Golf Club
 https://templatemo.com/tm-587-tiya-golf-club
 
 -->
-    </head>
+  <div id="loader-wrapper">
+    <img src="images/gemini-removebg.png" alt="IOHERB Logo" class="loader-logo">
     
-    <body>
-
-        <main>
-<nav class="navbar navbar-expand-lg">                
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="loader-text">IOHERB-SMART</div>
+</div>
 
        
 </nav>
        <nav class="navbar navbar-expand-lg">                
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/gemini.png" class="navbar-brand-image img-fluid" alt="Limbah Kosmetik">
-            <span style="-webkit-text-fill-color: forestgreen;"class="navbar-brand-text ms-2">
+            <img src="images/gemini-removebg.png" class="navbar-brand-image img-fluid" alt="Limbah Kosmetik">
+            <span style="-webkit-text-fill-color: rgb(255, 255, 255);"class="navbar-brand-text ms-2">
                 IOHERB-SMART <br>
                 <small></small>
             </span>
@@ -128,7 +171,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             <div class="col-lg-5 col-md-6 col-12 mb-4">
                 <div class="custom-block-estetik-mini position-relative h-100 shadow-lg" style="border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid #eee;">
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/wd4yNMiIPCQ" title="Layanan 1" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/g4zRddbGhOY" title="Layanan 1" allowfullscreen></iframe>
                     </div>
                     <div class="p-4 text-center">
                         <h5 class="mb-2 text-success">Video 1</h5>
@@ -169,8 +212,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                         </div>
                     </div>
 
-                    <div class="col-md-6 position-relative d-flex align-items-center" style="min-height: 400px; background-color: #1b3c18;">
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('images/herbal.jpg'); background-size: cover; background-position: center; opacity: 0.2;"></div>
+                    <div class="col-md-6 position-relative d-flex align-items-center" style="min-height: 400px;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('images/teh.jpg'); background-size: cover; background-position: center;filter: brightness(0.6);"></div>
                         
                         <div class="p-5 position-relative w-100">
                             <div class="mb-3">
@@ -270,7 +313,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
             <div class="mt-4 d-flex align-items-center">
                 <div class="me-3" style="width: 40px; height: 2px; background: #81B29A;"></div>
-                <small class="text-muted text-uppercase fw-bold" style="letter-spacing: 2px;"></small>
+                <small class="text-muted text-uppercase fw-bold" style="letter-spacing: 2px;">Inovasi • Edukasi • Masa Depan</small>
             </div>
         </div>
     </div>
@@ -282,22 +325,22 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <h4 class="text-center mb-5">Tim Pengembang:</h4>
                     <div class="row text-center justify-content-center">
                         <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <img src="images/members/portrait-young-handsome-businessman-wearing-suit-standing-with-crossed-arms-with-isolated-studio-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/farel.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;object-position: center 10%; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Ketua Pelaksana:</h6>
                             <p class="fw-bold">Made Parel Abdi Setiawan</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/angel.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;object-position: center 30%; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Wakil Ketua:</h6>
                             <p class="fw-bold">Angel Diana Ekaningtyas</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/salsa.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position:center 40%; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Sekretaris:</h6>
                             <p class="fw-bold">Salsabiil Sonhaji</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/sintya.JPG" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;object-position:center 30%; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Bendahara:</h6>
                             <p class="fw-bold">Putu Sintya Dewi</p>
                         </div>
@@ -308,17 +351,17 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <h4 class="text-center mb-5">Tim Divisi:</h4>
                     <div class="row text-center justify-content-center">
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/avantya.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Koordinator Pengelolaan Limbah:</h6>
                             <p class="fw-bold mb-0">Avantya Mardha Vaysa</p>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/jenita.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;object-position: center 40%; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Koordinator IT dan Website :</h6>
                             <p class="fw-bold mb-0">Jenita Amanda Putri</p>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
-                            <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid #fff;">
+                            <img src="images/linda.jpeg" class="mb-3 shadow" style="width: 120px; height: 120px; border-radius: 50%; object-fit: top; border: 4px solid #fff;">
                             <h6 class="text-success mb-1">Koordinator Humas dan Dokumentasi:</h6>
                             <p class="fw-bold mb-0">Hesti Maulinda Putri</p>
                         </div>
@@ -480,7 +523,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             
             <div class="col-lg-3 col-md-4 col-12 mb-3 mb-lg-0">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/gemini.png" class="img-fluid" alt="Logo" style="max-height: 45px; width: auto;">
+                    <img src="images/gemini-removebg.png" class="img-fluid" alt="Logo" style="max-height: 45px; width: auto;">
                     <div class="ms-2">
                         <strong style="font-size: 1.1rem; display: block; line-height: 1; color: #fff;">IOHERB</strong>
                         <strong style="color: #f7f7f7; font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase;">SMART</strong>
@@ -528,5 +571,20 @@ https://templatemo.com/tm-587-tiya-golf-club
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
 
+<script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("loader-wrapper");
+        
+        setTimeout(function() {
+            // Menghilangkan dengan efek fade out yang lambat (elegan)
+            loader.style.opacity = "0";
+            
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 1000); // Waktu yang dibutuhkan sampai benar-benar hilang dari layar
+        }, 3000); // Ditahan selama 3 detik
+    });
+</script>
     </body>
+    
 </html>
