@@ -46,7 +46,25 @@ body {
   background-color: #ffffff;
   font-family: var(--body-font-family); 
 }
+.profile-circle {
+    width: 130px; 
+    height: 130px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 4px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px; /* Mengetengahkan lingkaran */
+}
 
+.profile-circle img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover; /* Memastikan wajah terpotong pas di tengah */
+    object-position: top;
+    background-color: #f0f0f0;
+}
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -144,7 +162,7 @@ strong {
 /* gradasi das */
 .section-overlay {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgb(25, 118, 59) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgb(13, 63, 31) 100%) repeat scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
@@ -729,7 +747,7 @@ a.text-decoration-none:hover h5 {
 -----------------------------------------*/
 /*ngatur gambar besar*/
 .hero-section {
-    background-image: url('../images/pura-ulun-beratan.jpg');
+    background-image: url('../images/AI-Image-Editor-2026-01-17_12-02-37.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
